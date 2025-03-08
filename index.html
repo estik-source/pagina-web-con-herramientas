@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><i class="fa-solid fa-car-side fa-2xl" style="color: rgb(30, 148, 87);"></i></a>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul id="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de mí</a></li>
+                <li><a href="#">Trabajos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section class="section-secundaria">
+        <div class="productos-horizontal">
+            <div class="producto">
+                <img src="img/auto1.jpg" alt="BMW">
+                <h3>BMW M3 E92 (Negro Mate)</h3>
+                <p>$500,000</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/bmw2.jpeg" width="200px" height="200px" alt="Auto Deportivo 2">
+                <h3> BMW M3 F80 (Negro Brillante)</h3>
+                <p>$600,000</p>
+            </div>
+            <div class="producto">
+                <img src="img/bmw.jpeg" alt="Auto Deportivo 3">
+                <h3> BMW i8 (Híbrido Deportivo)</h3>
+                <p>$200,000</p>
+            </div>
+            <div class="producto">
+                <img src="img/bmw3.jpg" alt="Auto Deportivo 4">
+                <h3>BMW M2 Competition (Negro Brillante)</h3>
+                <p>$300,000</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="container">
+        <div class="form-content">
+            <h1 id="title">Registro</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameInput">
+                        <i class="fa-solid fa-user-large fa-lg" style="color: rgb(30, 148, 87);"></i>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope fa-lg" style="color: rgb(30, 148, 87);"></i>
+                        <input type="email" placeholder="Correo">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock fa-lg" style="color: rgb(30, 148, 87);"></i>
+                        <input type="password" placeholder="Contraseña">
+                    </div>
+                    <p>Olvidaste tu contraseña <a href="#">Restablecer contraseña</a> </p>
+                </div>
+                <div class="btn-field">
+                    <button id="signUp" type="button">Registro</button>
+                    <button id="signIn" type="button" class="disable">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer class="redes">
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/reel/DFWMzmIPxu6/?igsh=QkJITmFuN05xMA%3D%3D" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/?kuid=317b26d2-c08a-497f-9ab0-df56eaf7fd8b&kref=pBPVbxkzdhlF" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                <li><a href="https://x.com/%22" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <h3>@2025 Todos los derechos reservados</h3>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+
+
+
+</body>
+</html>
